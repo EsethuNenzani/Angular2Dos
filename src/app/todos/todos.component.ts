@@ -6,10 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-
+  todos;
+  text;
   constructor() { }
 
   ngOnInit() {
+    this.todos= [
+      {
+        text: 'Pickup kids at school'
+      },
+      {
+        text: 'Meeting with boss'
+      },
+      {
+        text: 'Dinner with wife'
+      }
+    ]
+  }
+
+  addTodo(){
+    console.log(this.text);
   }
 
 }
